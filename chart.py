@@ -120,7 +120,7 @@ class DrawDoubleChart:
 
                 intersections.append((x_intersection, y_intersection))
 
-        # Проверка на пересечение графиков в точке (0, 0)
+        # Проверка пересечения графиков в точке ноль по иксу
         for i in range(len(self.x)):
             if abs(self.x[i]) < 0.000001:
                 if np.isclose(self.y1[i], self.y2[i]):
